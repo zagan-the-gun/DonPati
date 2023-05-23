@@ -1,0 +1,23 @@
+ClearWeaponCargo _this;
+ClearMagazineCargo _this;
+
+_this AddMagazineCargo ["HuntingrifleMag", 200];
+_this AddMagazineCargo ["SVDDragunov", 200];
+_this AddMagazineCargo ["SkorpionMag", 200];
+_this AddMagazineCargo ["HK", 200];
+_this AddMagazineCargo ["HKG3Mag", 200];
+_this AddMagazineCargo ["M16", 200];
+_this AddMagazineCargo ["Steyrmag", 200];
+_this AddMagazineCargo ["AK47", 200];
+_this AddMagazineCargo ["AK74", 200];
+_this AddMagazineCargo ["G36aMag", 200];
+_this AddMagazineCargo ["FALMag", 200];
+_this AddMagazineCargo ["M60", 200];
+_this AddMagazineCargo ["PK", 200];
+_this AddMagazineCargo ["M4", 200];
+_this AddMagazineCargo ["BizonMag", 200];
+_this AddMagazineCargo ["UZIMag", 200];
+_this AddMagazineCargo ["IngramMag", 200];
+_this AddMagazineCargo ["M21", 200];
+_this AddMagazineCargo ["Kozliceshell", 200];
+_this AddMagazineCargo ["Kozliceball", 200];

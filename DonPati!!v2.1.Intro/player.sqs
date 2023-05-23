@@ -1,0 +1,112 @@
+removeallweapons _this;
+
+_lottery = (random 1000);
+_num = _lottery - (_lottery % 1);
+;hint Format["%1, %2", _lottery, _num];
+? 1 == _num : goto "HandGrenade";
+
+_array = ["Huntingrifle", "SVDDragunov", "Skorpion", "HK", "HKG3", "M16", "Steyr", "AK47", "AK74", "G36A", "FAL", "M60", "PK", "AK74SU", "AK47CZ", "XMS", "M4", "Bizon", "UZI", "Ingram", "M21", "Kozlice"];
+_r = (random count _array);
+_weapon = _array select (_r - (_r % 1));
+
+;hint Format["Get %1!", _weapon];
+
+goto _weapon;
+
+#Huntingrifle
+_this addmagazine "HuntingrifleMag";
+goto "EQUIP"
+
+#SVDDragunov
+_this addmagazine "SVDDragunov";
+goto "EQUIP"
+
+#Skorpion
+#HK
+_this addmagazine "HK";
+goto "EQUIP"
+
+#HKG3
+_this addmagazine "HKG3Mag";
+goto "EQUIP"
+
+#M16
+_this addmagazine "M16";
+goto "EQUIP"
+
+#Steyr
+_this addmagazine "Steyrmag";
+goto "EQUIP"
+
+#AK47
+_this addmagazine "AK47";
+goto "EQUIP"
+
+#AK74
+_this addmagazine "AK74";
+goto "EQUIP"
+
+#G36A
+_this addmagazine "G36aMag";
+goto "EQUIP"
+
+#FAL
+_this addmagazine "FALMag";
+goto "EQUIP"
+
+#M60
+_this addmagazine "M60";
+goto "EQUIP"
+
+#PK
+_this addmagazine "PK";
+goto "EQUIP"
+
+#AK74SU
+_this addmagazine "AK74";
+goto "EQUIP"
+
+#AK47CZ
+_this addmagazine "AK47";
+goto "EQUIP"
+
+#XMS
+_this addmagazine "M4";
+goto "EQUIP"
+
+#M4
+_this addmagazine "M4";
+goto "EQUIP"
+
+#Bizon
+_this addmagazine "BizonMag";
+goto "EQUIP"
+
+#UZI
+_this addmagazine "UZIMag";
+goto "EQUIP"
+
+#Ingram
+_this addmagazine "IngramMag";
+goto "EQUIP"
+
+#M21
+_this addmagazine "M21";
+goto "EQUIP"
+
+#Kozlice
+_this addmagazine "Kozliceshell";
+_this addmagazine "Kozliceball";
+goto "EQUIP"
+
+#EQUIP
+_this addweapon _weapon;
+_this selectweapon _weapon;
+goto "END"
+
+#HandGrenade
+_this addmagazine "HandGrenade";
+_this addweapon "HandGrenade";
+_this selectweapon "HandGrenade";
+
+#END

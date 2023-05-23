@@ -1,0 +1,30 @@
+respawn=3
+respawndelay=1
+onLoadMission="DonPati!"
+
+titleParam1 = "HoldTime:";
+valuesParam1[] = {1, 2, 3, 5};
+defValueParam1 = 1;
+textsParam1[] = {"1 min", "2 min", "3 min", "5 min"};
+
+class CfgSounds
+{
+	sounds[] = 
+		{
+			Score, Capture
+		};
+	class Score
+	
+	{
+		name = "Score";
+		sound[] = {"Score.ogg", 1, 1.0};
+		titles[] = {	};
+	};
+	class Capture
+	
+	{
+		name = "Capture";
+		sound[] = {"Capture.ogg", 10, 1.0};
+		titles[] = {	};
+	};
+};
