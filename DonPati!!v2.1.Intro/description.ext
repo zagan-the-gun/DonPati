@@ -3,9 +3,9 @@ respawndelay=1
 onLoadMission="DonPati!"
 
 titleParam1 = "HoldTime:";
-valuesParam1[] = {1, 2, 3, 5};
+valuesParam1[] = {1, 2, 3, 4, 5};
 defValueParam1 = 1;
-textsParam1[] = {"1 min", "2 min", "3 min", "5 min"};
+textsParam1[] = {"1 min", "2 min", "3 min", "4 min", "5 min"};
 
 class CfgSounds
 {
